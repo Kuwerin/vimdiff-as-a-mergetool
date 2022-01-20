@@ -1,5 +1,11 @@
 # vimdiff as a mergetool
 
+Sometimes you can get a sitation, when your rebase onto master couldn't be fast-forwarded due the conflicts:
+```shell
+git checkout feature
+git rebase master
+```
+
 
 ```shell
 Auto-merging animals.txt
@@ -35,5 +41,7 @@ In case you got multiple file conflict you can use `[c` and `]c` to jump to the 
 Save the file and quit (a fast way to write and quit multiple files is `:wqa`).
 
 Run `git commit` and you are all set!
+
+If you doing a rebase, you should to perform `git rebase --continue`
 
 This instruction is based on [Ruslan Osipov's article](https://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/ "Use vimdiff as git mergetool") helps to understand, how to resolve merge conflicts using vimdiff as a mergetool.
