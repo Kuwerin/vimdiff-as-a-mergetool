@@ -1,0 +1,1 @@
+# vimdiff-as-a-mergetool
